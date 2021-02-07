@@ -1,13 +1,49 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: Russo One;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Russo One;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+#drum-machine {
+  background-color: rgb(102, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  border-radius: 3px;
+  width: 700px;
+  height: 300px;
+  padding-top: 10px;
+}
+#grid-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.drum-pad {
+  text-align: center;
+  font-size: 26px;
+  width: 100px;
+  height: 80px;
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#display {
+  margin-top: 100px;
 }
